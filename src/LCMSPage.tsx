@@ -1,5 +1,4 @@
-// src/LCMSPage.tsx
-import { Card, CardContent } from "@/components/ui/card";
+// LCMS Scientific Website
 import { MailIcon } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -27,31 +26,26 @@ export default function LCMSPage() {
       </motion.header>
 
       <section className="grid md:grid-cols-2 gap-8 mb-20">
-        <Card className="rounded-2xl shadow-sm border border-gray-200">
-          <CardContent className="p-6 space-y-3">
-            <h2 className="text-2xl font-semibold text-sky-800">Our Services</h2>
-            <ul className="list-disc list-inside text-gray-700 space-y-1">
-              <li><strong>Operator Training:</strong> compound optimization, method development, data analysis</li>
-              <li><strong>Maintenance Training:</strong> hardware overview, maintenance, calibration</li>
-              <li><strong>Preventive Maintenance:</strong> OEM-standard service, consumables included</li>
-              <li><strong>Telephone Consultation:</strong> hourly expert guidance</li>
-            </ul>
-          </CardContent>
-        </Card>
+        <div className="rounded-2xl shadow-sm border border-gray-200 p-6 space-y-3">
+          <h2 className="text-2xl font-semibold text-sky-800">Our Services</h2>
+          <ul className="list-disc list-inside text-gray-700 space-y-1">
+            <li><strong>Operator Training:</strong> compound optimization, method development, data analysis</li>
+            <li><strong>Maintenance Training:</strong> hardware overview, maintenance, calibration</li>
+            <li><strong>Preventive Maintenance:</strong> OEM-standard service, consumables included</li>
+            <li><strong>Telephone Consultation:</strong> hourly expert guidance</li>
+          </ul>
+        </div>
 
-        <Card className="rounded-2xl shadow-sm border border-gray-200">
-          <CardContent className="p-6 space-y-3">
-            <h2 className="text-2xl font-semibold text-sky-800">Instrument Sales</h2>
-            <p className="text-sm text-gray-500">All units refurbished and fully tested</p>
-            <ul className="list-disc list-inside text-gray-700 space-y-1">
-              <li>Quantity 2 — Thermo LCQ Advantage ion trap instruments</li>
-              <li>Sciex API 3200 triple quadrupole</li>
-              <li>Sciex API 3000 with HSID upgrade (meets API 4000 specs)</li>
-            </ul>
-            <p className="text-sm text-gray-500">Don’t see what you need? Contact us — we may be able to source it.</p>
-            <p className="text-sm text-gray-600 mt-2">Recent Sales: LCQ Advantage and Sciex API 3000/HSID units sold this year to a lab in Toronto.</p>
-          </CardContent>
-        </Card>
+        <div className="rounded-2xl shadow-sm border border-gray-200 p-6 space-y-3">
+          <h2 className="text-2xl font-semibold text-sky-800">Instrument Sales</h2>
+          <p className="text-sm text-gray-500">All units refurbished and fully tested</p>
+          <ul className="list-disc list-inside text-gray-700 space-y-1">
+            <li>Quantity 2 — Thermo LCQ Advantage ion trap instruments</li>
+            <li>Sciex API 3200 triple quadrupole</li>
+            <li>Sciex API 3000 with HSID upgrade (meets API 4000 specs)</li>
+          </ul>
+          <p className="text-sm text-gray-500">Sold this year: LCQ Advantage and API 3000/HSID systems to a lab in Toronto</p>
+        </div>
       </section>
 
       <section className="bg-sky-50 rounded-2xl shadow-inner p-6 md:p-10 mb-20">
@@ -108,3 +102,4 @@ export default function LCMSPage() {
     </div>
   );
 }
+
